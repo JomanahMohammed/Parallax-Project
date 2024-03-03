@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}    
+
+body{
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo{
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 270px;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover, 
+.navigation a.active{
+    background: #359381;
+    color: #fff;
+}
+
+.Parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+}
+
+.Parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+
+    height: 100%;
+
+
+}
+.sec{
+    position: relative;
+    background: #003329;
+    padding: 100px;
+    min-height: 700px;
+
+}
+
+.sec h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom:10px ;
+}
+.sec p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+
+
+@media screen and (max-width: 990px)  {
+    #text {
+      font-size: 3.5em;
+      margin-bottom: 20px;
+    }
+    .Parallax {
+      height: 100vh;
+    }
+    header{  
+        width: 100%;
+        align-items: center;
+        padding:10px;
+        z-index: 100;
+        display: inline-block;
+        margin: 10px 20px;
+    }
+
+    .navigation{
+        padding-top: 30px;
+    }
+
+  }
